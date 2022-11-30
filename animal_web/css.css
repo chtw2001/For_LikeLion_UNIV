@@ -1,0 +1,165 @@
+* {
+    margin: 0; padding: 0;
+    font-family: '맑은 고딕', 'Malgun Gothic';
+}
+a { 
+    text-decoration: none; 
+    
+}
+li { list-style: none; }
+body {
+    width: 960px; margin: 0 auto; 
+    background: #E6E6E6;
+}
+#page-wrapper {
+    overflow: hidden;
+    background: white;
+    margin: 40px 0; padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+    position: relative;
+}
+#main-header { 
+    padding: 40px 50px;
+    background-image: url(호랑이2.png);
+}
+.master-title {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+#navigation {
+    border-color: solid #C8C8C8;
+    border-top: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 53px;
+    
+}
+.outer-menu {
+    padding: 0 170px;
+}
+.outer-menu-item {
+    float: left;
+    position: relative;
+    padding: 15px 70px;
+    background-color: rgb(46, 156, 142);
+    border: 1px solid rgb(31, 184, 107);
+}
+.outer-menu-item:hover {
+    background-color: rgb(101, 189, 42);
+}
+.menu-title {
+    display: block;
+    height: 30px; line-height: 30px;
+    text-align: center;
+    padding: 5px 20px;
+}
+ul.outer-menu *:first-child {
+    border-radius: 15px 0 0 15px;
+    
+}
+ul.outer-menu *:last-child {
+    border-radius: 0 15px 15px 0;
+    
+}
+#content {
+    overflow: hidden;
+    margin: 20px 0 20px 0;
+}
+#main-section {
+    width: 700px;
+    padding: auto 10px;
+}
+#main-aside {
+    width: 200px;
+    vertical-align: top;
+}
+.mid-align {
+    padding: 30px 200px;
+}
+.footbox {
+    height: 100px;
+    background-image: url(랫서판다.jpg);
+    font-size: 20px;
+    
+}
+.text-center {
+    text-align: center;
+}
+
+
+div.each-animal>a>img {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+div.each-animal {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 170px;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    
+    
+}
+.animal-container {
+    position: relative;
+}
+
+.name_data {
+    padding: 0 50px;
+}
+summary {
+    font-weight: bold;
+}
+.sitemap {
+    border: 2px solid black;
+    border-radius: 10px;
+    color: blue;
+    background-color: green;
+    position: absolute;
+    right: 40px;
+    top: 160px;
+    width: 80px;
+    text-align: center;
+}
+.align-center {
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid black;
+    width:300px;
+    margin-left: 290px;
+}
+.sitetable {
+    margin: 100px 100px 100px 115px;
+}
+.rows {
+    position: absolute;
+    border-right: 1px solid black;
+    width: 440px;
+    height: 100px;
+    top: 63px;
+    z-index: 1;
+}
+.cols {
+    position: absolute;
+    border-bottom: 1px solid black;
+    width: 600px;
+    height: 100px;
+    top: 63px;
+    z-index: 1;
+    left: 170px;
+}
+.th {
+    background: white;
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성결대 통합 웹</title>
+    <!-- 초기화하기 -->
+    <style>
+        *{
+            margin: 0; padding: 0;
+            font-family: '맑은고딕', 'Malgun Gothic', Gothic, sans-serif;
+        }
+        
+        a{ text-decoration: none;}
+
+        li{ list-style: none;}
+    </style>
+    <!-- 기본 클래스 -->
+    <style>
+        .pull-left { float: left;}
+        .pull-right { float: right;}
+    </style>
+    <!-- 2.페이지 구성하기 -->
+    <style>
+        body {
+            width: 960px; margin: 0 auto;
+            background: #e6e6e6;
+            }
+        #page-wrapper{
+            background: white;
+            margin: 40px 0; padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+        }
+    </style>
+    <!-- 3. 헤더 구성하기 -->
+    <style>
+        #main-header { 
+            padding: 40px 5px;
+        }
+        .master-title { 
+            font-size: 30px;
+            color: #181818;
+        }
+        .master-description {
+            font-size: 15px; font-weight: 500;
+            color: #383838;
+        }
+        img {
+            float: left;
+        }
+    </style>
+    <!-- 4. 내비게이션 및 풀다운 메뉴 구성하기-->
+    <style>
+        #main-navigation {
+            border-top: 1px solid #c8c8c8;
+            border-bottom: 1px solid #c8c8c8;
+            margin-bottom: 20px;
+            height: 40px;
+            background-color: #295ca4;
+            color: white;
+        }
+        .outer-menu-item {
+            float: left;
+            position: relative;
+        }
+        .outer-menu-item:hover {
+            background: #295ca4;
+            color: yellow;
+        }
+        .menu-title {
+            display: block;
+            height: 30px; line-height: 30px;
+            text-align: center;
+            padding: 5px 20px;
+        }
+
+        .inner-menu {
+            display: none;
+            position: absolute;
+            top: 40px; left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
+            z-index: 1000;
+            text-align: center;
+        }
+    
+    </style> 
+    <!-- 5. 검색 양식 추가하기(내비게이션 내부 검색) -->
+    <style>
+        .search-bar {
+            height: 26px;
+            padding: 7px;
+        }
+
+        .input-search {
+            display: block;
+            float: left;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 15px 0 0 15px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+            width: 120px; height: 24px;
+            padding: 0 0 0 10px;
+            font-size: 12px;
+            color: #555555;
+        }
+        .input-search:focus{
+            border-color: rgba(82, 168, 236, 0.8);
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+        }
+        .input-search-submit {
+            display: block;
+            float: left;
+            width: 50px; height: 26px;
+            border-radius: 0 15px 15px 0;
+            border: 1px solid #cccccc;
+            margin-left: -1px;
+            vertical-align: top;
+            display: inline-block;
+        }
+    </style>
+    <!-- 6. 본문 추가하기(중앙 내용)-->
+    <style>
+        /* body 태그의 너비: 960px */
+        /* #page-wrapper 태그의 padding 속성으로 내용물 너비는 920px*/
+        #content { overflow: hidden;}
+
+        #main-section {
+            float: left;
+            width: 710px;
+        }
+        #main-aside {
+            float: right;
+            width: 200px;
+        }
+    </style>
+    <!-- 6. 본문 추가하기(본문 포스트 위쪽) -->
+    <style>
+        article {
+            padding: 0 10px 20px 10px;
+        }
+        .article-header { 
+            padding: 20px 0;
+        }
+        .article-title {
+            font-size: 25px;
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+        .article-date { font-size: 13px;}
+    </style>
+    <!-- 6. 본문추가하기(사이드 메뉴)-->
+    <style>
+        .aside-list { padding: 10px 0 30px 0;}
+        .aside-list > h3 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .aside-list li a {
+            margin-left: 8px;
+        }
+        .aside-list li a {
+            margin-left: 8px;
+            font-size: 13px;
+            color: #6c6c6c;
+        }
+        
+    </style>
+<script></script>
+<script></script>
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="main-header">
+            <hgroup>
+                <img src="SKUsymbol.png" width="100px">
+                <h1 class="master-title">성결대 통합 웹</h1>
+                <h2 class="master-description">SungKyul University</h2>
+            </hgroup>
+        </header>
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title"><a style="color: white;"href="성결대통합웹-버스시간표.html">버스시간표공지</a></span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item">버스시간표공지</li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title"><a style="color: white;" href="#">공지사항</a></span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item">공지사항</li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title"><a style="color: white;" href="#">건의사항</a></span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item">건의사항</li>   
+                        </ul>   
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title"><a style="color: white;" href="#">분실물</a></span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item">분실물</li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title"><a style="color: white;" href="성결대통합웹-강의실예약.html">강의실예약</a></span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item">강의실예약</li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title"><a style="color: white; background-color: yellowgreen; padding: 9px" href="성결대통합웹-내시간표.html">내시간표</a></span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item">내시간표</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="SEARCH">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">수업 시간표</h1>
+                        <p class="article-date">2022년 2학기</p>
+                    </div>
+                    <div class="article-body">
+                        <img src="수정된시간표.jpg" width="400px">
+                    </div>
+                    <div class="pull-left" style="width: 30; height: 10; background-color: #295ca4; color: white; padding: 5px">
+                        <span>push알람 on</span>
+                    </div>
+                    <div style="position: relative; ">
+                        <div style="width: 30; height: 10; background-color: #295ca4; color: white; padding: 5px; position: absolute; right: 190px; top: 260px;">
+                            <a href="성결대통합웹-내시간표-수정">수정하기</a>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title"></h1>
+                        <p class="article-date"></p>
+                    </div>
+                    <div class="article-body">
+                    </div>
+                </article>
+            </section>
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>자유 게시판</h3>
+                    <ul>
+                        <li><a href="#">컴퓨터 관련 자격증...</a></li>
+                        <li><a href="#">월드컵 우승 어느팀?</a></li>
+                        <li><a href="#">대한민국 vs 포르투갈</a></li>
+                        <li><a href="#">울집 고양이 봐줘</a></li>
+                    </ul>
+                </div>
+                <div class="aside-list">
+                    <h3>HOT 게시판</h3>
+                    <ul>
+                        <li><a href="#">☆월드컵☆</a></li>
+                        <li><a href="#">학교생활 꿀팁</a></li>
+                        <li><a href="#">이번주 학식!</a></li>
+                        <li><a href="#">대한민국 vs 포르투갈</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div> 
+    </div>
+</body>
+</html>
