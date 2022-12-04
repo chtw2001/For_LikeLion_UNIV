@@ -24,3 +24,28 @@ for i in find:
         print(dic_a[i], end=' ')
     except:
         print(0, end=' ')
+
+
+
+
+
+
+# for i in range(m):
+#     cnt = 0
+#     left = 0
+#     right = n-1
+#     num = find[i]
+#     while left <= right:
+#         mid = (left + right) // 2
+#         if num < origin[mid]:
+#             right = mid - 1
+#         elif num > origin[mid]:
+#             left = mid + 1
+#         else:
+#             cnt = origin[left:right + 1].count(num)
+#             res[num] = cnt
+#             break
+#     if cnt == 0:
+#         res[num] = cnt
+# for i in find:
+#     print(res[i],end=' ')
